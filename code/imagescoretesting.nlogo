@@ -9,6 +9,159 @@ globals[
   nrcoop
 ]
 
+to createfigure
+  ca
+  ask patches [set freq 0.0]
+  ask n-of 144 patches [sprout-dots 1]
+  ask dots [set shape "dot" set color white]
+  ask patch -5 -5 [ask dots-here [set size 0.0065]]
+  ask patch -5 -4 [ask dots-here [set size 0.005]]
+  ask patch -5 -3 [ask dots-here [set size 0.0055]]
+  ask patch -5 -2 [ask dots-here [set size 0.0044]]
+  ask patch -5 -1 [ask dots-here [set size 0.0055]]
+  ask patch -5 0 [ask dots-here [set size 0.0051]]
+  ask patch -5 1 [ask dots-here [set size 0.0044]]
+  ask patch -5 2 [ask dots-here [set size 0.0051]]
+  ask patch -5 3 [ask dots-here [set size 0.0069]]
+  ask patch -5 4 [ask dots-here [set size 0.0079]]
+  ask patch -5 5 [ask dots-here [set size 0.0049]]
+  ask patch -5 6 [ask dots-here [set size 0.0069]]
+  ask patch -4 -5 [ask dots-here [set size 0.0058]]
+  ask patch -4 -4 [ask dots-here [set size 0.0055]]
+  ask patch -4 -3 [ask dots-here [set size 0.0081]]
+  ask patch -4 -2 [ask dots-here [set size 0.0062]]
+  ask patch -4 -1 [ask dots-here [set size 0.0055]]
+  ask patch -4 0 [ask dots-here [set size 0.0067]]
+  ask patch -4 1 [ask dots-here [set size 0.0061]]
+  ask patch -4 2 [ask dots-here [set size 0.0067]]
+  ask patch -4 3 [ask dots-here [set size 0.0061]]
+  ask patch -4 4 [ask dots-here [set size 0.0077]]
+  ask patch -4 5 [ask dots-here [set size 0.0068]]
+  ask patch -4 6 [ask dots-here [set size 0.005]]
+  ask patch -3 -5 [ask dots-here [set size 0.0079]]
+  ask patch -3 -4 [ask dots-here [set size 0.0066]]
+  ask patch -3 -3 [ask dots-here [set size 0.0066]]
+  ask patch -3 -2 [ask dots-here [set size 0.0066]]
+  ask patch -3 -1 [ask dots-here [set size 0.0073]]
+  ask patch -3 0 [ask dots-here [set size 0.007]]
+  ask patch -3 1 [ask dots-here [set size 0.0057]]
+  ask patch -3 2 [ask dots-here [set size 0.0071]]
+  ask patch -3 3 [ask dots-here [set size 0.0059]]
+  ask patch -3 4 [ask dots-here [set size 0.005]]
+  ask patch -3 5 [ask dots-here [set size 0.0041]]
+  ask patch -3 6 [ask dots-here [set size 0.0042]]
+  ask patch -2 -5 [ask dots-here [set size 0.0088]]
+  ask patch -2 -4 [ask dots-here [set size 0.0095]]
+  ask patch -2 -3 [ask dots-here [set size 0.008]]
+  ask patch -2 -2 [ask dots-here [set size 0.0074]]
+  ask patch -2 -1 [ask dots-here [set size 0.0065]]
+  ask patch -2 0 [ask dots-here [set size 0.0095]]
+  ask patch -2 1 [ask dots-here [set size 0.0108]]
+  ask patch -2 2 [ask dots-here [set size 0.007]]
+  ask patch -2 3 [ask dots-here [set size 0.0076]]
+  ask patch -2 4 [ask dots-here [set size 0.0064]]
+  ask patch -2 5 [ask dots-here [set size 0.0057]]
+  ask patch -2 6 [ask dots-here [set size 0.007]]
+  ask patch -1 -5 [ask dots-here [set size 0.013]]
+  ask patch -1 -4 [ask dots-here [set size 0.011]]
+  ask patch -1 -3 [ask dots-here [set size 0.01]]
+  ask patch -1 -2 [ask dots-here [set size 0.015]]
+  ask patch -1 -1 [ask dots-here [set size 0.01]]
+  ask patch -1 0 [ask dots-here [set size 0.0009]]
+  ask patch -1 1 [ask dots-here [set size 0.011]]
+  ask patch -1 2 [ask dots-here [set size 0.009]]
+  ask patch -1 3 [ask dots-here [set size 0.0082]]
+  ask patch -1 4 [ask dots-here [set size 0.009]]
+  ask patch -1 5 [ask dots-here [set size 0.0096]]
+  ask patch -1 6 [ask dots-here [set size 0.0054]]
+  ask patch 0 -5 [ask dots-here [set size 0.014]]
+  ask patch 0 -4 [ask dots-here [set size 0.011]]
+  ask patch 0 -3 [ask dots-here [set size 0.014]]
+  ask patch 0 -2 [ask dots-here [set size 0.01]]
+  ask patch 0 -1 [ask dots-here [set size 0.013]]
+  ask patch 0 0 [ask dots-here [set size 0.011]]
+  ask patch 0 1 [ask dots-here [set size 0.011]]
+  ask patch 0 2 [ask dots-here [set size 0.012]]
+  ask patch 0 3 [ask dots-here [set size 0.01]]
+  ask patch 0 4 [ask dots-here [set size 0.011]]
+  ask patch 0 5 [ask dots-here [set size 0.011]]
+  ask patch 0 6 [ask dots-here [set size 0.005]]
+  ask patch 1 -5 [ask dots-here [set size 0.0003]]
+  ask patch 1 -4 [ask dots-here [set size 0.0002]]
+  ask patch 1 -3 [ask dots-here [set size 0.0002]]
+  ask patch 1 -2 [ask dots-here [set size 0.0002]]
+  ask patch 1 -1 [ask dots-here [set size 0.0002]]
+  ask patch 1 0 [ask dots-here [set size 0.0003]]
+  ask patch 1 1 [ask dots-here [set size 0.001]]
+  ask patch 1 2 [ask dots-here [set size 0.008]]
+  ask patch 1 3 [ask dots-here [set size 0.0115]]
+  ask patch 1 4 [ask dots-here [set size 0.013]]
+  ask patch 1 5 [ask dots-here [set size 0.011]]
+  ask patch 1 6 [ask dots-here [set size 0.006]]
+  ask patch 2 -5 [ask dots-here [set size 0.0004]]
+  ask patch 2 -4 [ask dots-here [set size 0.0003]]
+  ask patch 2 -3 [ask dots-here [set size 0.0003]]
+  ask patch 2 -2 [ask dots-here [set size 0.0002]]
+  ask patch 2 -1 [ask dots-here [set size 0.0004]]
+  ask patch 2 0 [ask dots-here [set size 0.0002]]
+  ask patch 2 1 [ask dots-here [set size 0.0005]]
+  ask patch 2 2 [ask dots-here [set size 0.0012]]
+  ask patch 2 3 [ask dots-here [set size 0.0038]]
+  ask patch 2 4 [ask dots-here [set size 0.0091]]
+  ask patch 2 5 [ask dots-here [set size 0.0015]]
+  ask patch 2 6 [ask dots-here [set size 0.0005]]
+  ask patch 3 -5 [ask dots-here [set size 0.0009]]
+  ask patch 3 -4 [ask dots-here [set size 0.0007]]
+  ask patch 3 -3 [ask dots-here [set size 0.0006]]
+  ask patch 3 -2 [ask dots-here [set size 0.0006]]
+  ask patch 3 -1 [ask dots-here [set size 0.0009]]
+  ask patch 3 0 [ask dots-here [set size 0.001]]
+  ask patch 3 1 [ask dots-here [set size 0.0013]]
+  ask patch 3 2 [ask dots-here [set size 0.0018]]
+  ask patch 3 3 [ask dots-here [set size 0.0022]]
+  ask patch 3 4 [ask dots-here [set size 0.003]]
+  ask patch 3 5 [ask dots-here [set size 0.005]]
+  ask patch 3 6 [ask dots-here [set size 0.007]]
+  ask patch 4 -5 [ask dots-here [set size 0.004]]
+  ask patch 4 -4 [ask dots-here [set size 0.003]]
+  ask patch 4 -3 [ask dots-here [set size 0.003]]
+  ask patch 4 -2 [ask dots-here [set size 0.003]]
+  ask patch 4 -1 [ask dots-here [set size 0.003]]
+  ask patch 4 0 [ask dots-here [set size 0.003]]
+  ask patch 4 1 [ask dots-here [set size 0.002]]
+  ask patch 4 2 [ask dots-here [set size 0.002]]
+  ask patch 4 3 [ask dots-here [set size 0.002]]
+  ask patch 4 4 [ask dots-here [set size 0.003]]
+  ask patch 4 5 [ask dots-here [set size 0.006]]
+  ask patch 4 6 [ask dots-here [set size 0.005]]
+  ask patch 5 -5 [ask dots-here [set size 0.026]]
+  ask patch 5 -4 [ask dots-here [set size 0.007]]
+  ask patch 5 -3 [ask dots-here [set size 0.0084]]
+  ask patch 5 -2 [ask dots-here [set size 0.0057]]
+  ask patch 5 -1 [ask dots-here [set size 0.0053]]
+  ask patch 5 0 [ask dots-here [set size 0.0048]]
+  ask patch 5 1 [ask dots-here [set size 0.0074]]
+  ask patch 5 2 [ask dots-here [set size 0.0036]]
+  ask patch 5 3 [ask dots-here [set size 0.006]]
+  ask patch 5 4 [ask dots-here [set size 0.004]]
+  ask patch 5 5 [ask dots-here [set size 0.007]]
+  ask patch 5 6 [ask dots-here [set size 0.005]]
+  ask patch 6 -5 [ask dots-here [set size 0.064]]
+  ask patch 6 -4 [ask dots-here [set size 0.012]]
+  ask patch 6 -3 [ask dots-here [set size 0.009]]
+  ask patch 6 -2 [ask dots-here [set size 0.011]]
+  ask patch 6 -1 [ask dots-here [set size 0.011]]
+  ask patch 6 0 [ask dots-here [set size 0.011]]
+  ask patch 6 1 [ask dots-here [set size 0.012]]
+  ask patch 6 2 [ask dots-here [set size 0.014]]
+  ask patch 6 3 [ask dots-here [set size 0.013]]
+  ask patch 6 4 [ask dots-here [set size 0.013]]
+  ask patch 6 5 [ask dots-here [set size 0.013]]
+  ask patch 6 6 [ask dots-here [set size 0.006]]
+  ask patches [ask dots-here [set size size * 30]]
+  reset-ticks
+end
+
 to setup
    ca
   create-agnts number [
@@ -32,7 +185,7 @@ to setup
 
   reset-ticks
   ; for the visualization of frequencies we add turtles representing relative frequencies
-  ask patches [set freq 0.01]
+  ask patches [set freq 0.0]
   ask n-of 144 patches [sprout-dots 1]
   ask dots [set shape "dot" set color white set hidden? true]
 end
@@ -218,9 +371,9 @@ to playgames
   if ticks = 0 [ask dots [set hidden? false]]
   if ticks > 0
   [
-    ask patches [
-      ask dots-here [set size 5 * ([freq] of patch-here / maxfreq) ^ 0.5] ; use the square-root of the relative frequency for visualization purposes
-    ]
+  ;  ask patches [
+  ;    ask dots-here [set size 5 * ([freq] of patch-here / maxfreq) ^ 0.5] ; use the square-root of the relative frequency for visualization purposes
+  ;  ]
   ]
 
 
@@ -404,24 +557,6 @@ b
 NIL
 HORIZONTAL
 
-PLOT
-8
-324
-208
-474
-Strategy
-NIL
-NIL
--5.0
-6.0
-0.0
-100.0
-true
-false
-"" ""
-PENS
-"default" 1.0 1 -16777216 true "set-histogram-num-bars 12" "histogram [k] of agnts"
-
 SLIDER
 12
 152
@@ -437,43 +572,6 @@ mutationrate
 NIL
 HORIZONTAL
 
-PLOT
-432
-324
-632
-474
-average k & h
-NIL
-NIL
-0.0
-10.0
--5.0
-5.0
-true
-false
-"" ""
-PENS
-"k" 1.0 0 -13345367 true "" "plot mean [k] of agnts"
-"h" 1.0 0 -2674135 true "" "plot mean [h] of agnts"
-
-PLOT
-221
-324
-421
-474
-average payoff
-NIL
-NIL
-0.0
-10.0
-0.0
-1.0
-true
-false
-"" ""
-PENS
-"default" 1.0 0 -16777216 true "" "plot mean [payoff] of agnts"
-
 CHOOSER
 188
 15
@@ -482,7 +580,7 @@ CHOOSER
 h-variable
 h-variable
 "none" "AND" "OR"
-0
+2
 
 SLIDER
 10
@@ -493,7 +591,7 @@ visibility
 visibility
 0
 1
-0.1
+0.5
 0.01
 1
 NIL
@@ -506,6 +604,23 @@ BUTTON
 43
 NIL
 go
+NIL
+1
+T
+OBSERVER
+NIL
+NIL
+NIL
+NIL
+1
+
+BUTTON
+36
+293
+142
+326
+NIL
+createfigure
 NIL
 1
 T
@@ -889,24 +1004,156 @@ NetLogo 6.2.2
       <value value="1"/>
     </enumeratedValueSet>
   </experiment>
-  <experiment name="experiment3" repetitions="10" sequentialRunOrder="false" runMetricsEveryStep="false">
+  <experiment name="experiment4" repetitions="10" sequentialRunOrder="false" runMetricsEveryStep="false">
     <setup>setup</setup>
     <go>go</go>
     <timeLimit steps="1000000"/>
     <metric>cumpayoff</metric>
     <metric>cumcoop</metric>
+    <metric>[freq] of patch -5 -5</metric>
+    <metric>[freq] of patch -5 -4</metric>
+    <metric>[freq] of patch -5 -3</metric>
+    <metric>[freq] of patch -5 -2</metric>
+    <metric>[freq] of patch -5 -1</metric>
     <metric>[freq] of patch -5 0</metric>
+    <metric>[freq] of patch -5 1</metric>
+    <metric>[freq] of patch -5 2</metric>
+    <metric>[freq] of patch -5 3</metric>
+    <metric>[freq] of patch -5 4</metric>
+    <metric>[freq] of patch -5 5</metric>
+    <metric>[freq] of patch -5 6</metric>
+    <metric>[freq] of patch -4 -5</metric>
+    <metric>[freq] of patch -4 -4</metric>
+    <metric>[freq] of patch -4 -3</metric>
+    <metric>[freq] of patch -4 -2</metric>
+    <metric>[freq] of patch -4 -1</metric>
     <metric>[freq] of patch -4 0</metric>
+    <metric>[freq] of patch -4 1</metric>
+    <metric>[freq] of patch -4 2</metric>
+    <metric>[freq] of patch -4 3</metric>
+    <metric>[freq] of patch -4 4</metric>
+    <metric>[freq] of patch -4 5</metric>
+    <metric>[freq] of patch -4 6</metric>
+    <metric>[freq] of patch -3 -5</metric>
+    <metric>[freq] of patch -3 -4</metric>
+    <metric>[freq] of patch -3 -3</metric>
+    <metric>[freq] of patch -3 -2</metric>
+    <metric>[freq] of patch -3 -1</metric>
     <metric>[freq] of patch -3 0</metric>
+    <metric>[freq] of patch -3 1</metric>
+    <metric>[freq] of patch -3 2</metric>
+    <metric>[freq] of patch -3 3</metric>
+    <metric>[freq] of patch -3 4</metric>
+    <metric>[freq] of patch -3 5</metric>
+    <metric>[freq] of patch -3 6</metric>
+    <metric>[freq] of patch -2 -5</metric>
+    <metric>[freq] of patch -2 -4</metric>
+    <metric>[freq] of patch -2 -3</metric>
+    <metric>[freq] of patch -2 -2</metric>
+    <metric>[freq] of patch -2 -1</metric>
     <metric>[freq] of patch -2 0</metric>
+    <metric>[freq] of patch -2 1</metric>
+    <metric>[freq] of patch -2 2</metric>
+    <metric>[freq] of patch -2 3</metric>
+    <metric>[freq] of patch -2 4</metric>
+    <metric>[freq] of patch -2 5</metric>
+    <metric>[freq] of patch -2 6</metric>
+    <metric>[freq] of patch -1 -5</metric>
+    <metric>[freq] of patch -1 -4</metric>
+    <metric>[freq] of patch -1 -3</metric>
+    <metric>[freq] of patch -1 -2</metric>
+    <metric>[freq] of patch -1 -1</metric>
     <metric>[freq] of patch -1 0</metric>
+    <metric>[freq] of patch -1 1</metric>
+    <metric>[freq] of patch -1 2</metric>
+    <metric>[freq] of patch -1 3</metric>
+    <metric>[freq] of patch -1 4</metric>
+    <metric>[freq] of patch -1 5</metric>
+    <metric>[freq] of patch -1 6</metric>
+    <metric>[freq] of patch 0 -5</metric>
+    <metric>[freq] of patch 0 -4</metric>
+    <metric>[freq] of patch 0 -3</metric>
+    <metric>[freq] of patch 0 -2</metric>
+    <metric>[freq] of patch 0 -1</metric>
     <metric>[freq] of patch 0 0</metric>
+    <metric>[freq] of patch 0 1</metric>
+    <metric>[freq] of patch 0 2</metric>
+    <metric>[freq] of patch 0 3</metric>
+    <metric>[freq] of patch 0 4</metric>
+    <metric>[freq] of patch 0 5</metric>
+    <metric>[freq] of patch 0 6</metric>
+    <metric>[freq] of patch 1 -5</metric>
+    <metric>[freq] of patch 1 -4</metric>
+    <metric>[freq] of patch 1 -3</metric>
+    <metric>[freq] of patch 1 -2</metric>
+    <metric>[freq] of patch 1 -1</metric>
     <metric>[freq] of patch 1 0</metric>
+    <metric>[freq] of patch 1 1</metric>
+    <metric>[freq] of patch 1 2</metric>
+    <metric>[freq] of patch 1 3</metric>
+    <metric>[freq] of patch 1 4</metric>
+    <metric>[freq] of patch 1 5</metric>
+    <metric>[freq] of patch 1 6</metric>
+    <metric>[freq] of patch 2 -5</metric>
+    <metric>[freq] of patch 2 -4</metric>
+    <metric>[freq] of patch 2 -3</metric>
+    <metric>[freq] of patch 2 -2</metric>
+    <metric>[freq] of patch 2 -1</metric>
     <metric>[freq] of patch 2 0</metric>
+    <metric>[freq] of patch 2 1</metric>
+    <metric>[freq] of patch 2 2</metric>
+    <metric>[freq] of patch 2 3</metric>
+    <metric>[freq] of patch 2 4</metric>
+    <metric>[freq] of patch 2 5</metric>
+    <metric>[freq] of patch 2 6</metric>
+    <metric>[freq] of patch 3 -5</metric>
+    <metric>[freq] of patch 3 -4</metric>
+    <metric>[freq] of patch 3 -3</metric>
+    <metric>[freq] of patch 3 -2</metric>
+    <metric>[freq] of patch 3 -1</metric>
     <metric>[freq] of patch 3 0</metric>
+    <metric>[freq] of patch 3 1</metric>
+    <metric>[freq] of patch 3 2</metric>
+    <metric>[freq] of patch 3 3</metric>
+    <metric>[freq] of patch 3 4</metric>
+    <metric>[freq] of patch 3 5</metric>
+    <metric>[freq] of patch 3 6</metric>
+    <metric>[freq] of patch 4 -5</metric>
+    <metric>[freq] of patch 4 -4</metric>
+    <metric>[freq] of patch 4 -3</metric>
+    <metric>[freq] of patch 4 -2</metric>
+    <metric>[freq] of patch 4 -1</metric>
     <metric>[freq] of patch 4 0</metric>
+    <metric>[freq] of patch 4 1</metric>
+    <metric>[freq] of patch 4 2</metric>
+    <metric>[freq] of patch 4 3</metric>
+    <metric>[freq] of patch 4 4</metric>
+    <metric>[freq] of patch 4 5</metric>
+    <metric>[freq] of patch 4 6</metric>
+    <metric>[freq] of patch 5 -5</metric>
+    <metric>[freq] of patch 5 -4</metric>
+    <metric>[freq] of patch 5 -3</metric>
+    <metric>[freq] of patch 5 -2</metric>
+    <metric>[freq] of patch 5 -1</metric>
     <metric>[freq] of patch 5 0</metric>
+    <metric>[freq] of patch 5 1</metric>
+    <metric>[freq] of patch 5 2</metric>
+    <metric>[freq] of patch 5 3</metric>
+    <metric>[freq] of patch 5 4</metric>
+    <metric>[freq] of patch 5 5</metric>
+    <metric>[freq] of patch 5 6</metric>
+    <metric>[freq] of patch 6 -5</metric>
+    <metric>[freq] of patch 6 -4</metric>
+    <metric>[freq] of patch 6 -3</metric>
+    <metric>[freq] of patch 6 -2</metric>
+    <metric>[freq] of patch 6 -1</metric>
     <metric>[freq] of patch 6 0</metric>
+    <metric>[freq] of patch 6 1</metric>
+    <metric>[freq] of patch 6 2</metric>
+    <metric>[freq] of patch 6 3</metric>
+    <metric>[freq] of patch 6 4</metric>
+    <metric>[freq] of patch 6 5</metric>
+    <metric>[freq] of patch 6 6</metric>
     <enumeratedValueSet variable="c">
       <value value="0.1"/>
     </enumeratedValueSet>
@@ -923,7 +1170,8 @@ NetLogo 6.2.2
       <value value="1"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="h-variable">
-      <value value="&quot;none&quot;"/>
+      <value value="&quot;AND&quot;"/>
+      <value value="&quot;OR&quot;"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="maxnrgames">
       <value value="200"/>
